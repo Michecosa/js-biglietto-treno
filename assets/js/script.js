@@ -11,7 +11,7 @@
 
   TOOLS:
   - prompt()
-  - variabili (let/const): chilometri, eta, prezzoBase prezzoFinale
+  - variabili (let/const): chilometri, eta, prezzoBase, sconto, prezzoFinale
   - if/ else if/ else
   - toFixed(2)
 */
@@ -32,36 +32,30 @@ const eta = Number(prompt("Quanti anni hai?"));
   Nota: il prezzo del biglietto è definito in base ai km (0.21 € al km) 
 */
 const prezzoBase = chilometri * 0.21;
-console.log("Il prezzo base è di €",prezzoBase.toFixed(2));
 
 
 /* 
 Verifica se l'età del passeggero rientra in una certa fascia per applicare eventuali sconti:
   - minorenne (<18): 20%; 
   - over65 (>65): 40%;
-
-  Se si, applicare il relativo sconto al prezzoBase per ottenere il prezzoFinale
-  Altrimenti, il prezzoFinale corrisponde al prezzoBase (18 <= eta <= 65)
 */
 
-let prezzoFinale;
-
+let sconto = 0;
 if(eta < 18) {
-  prezzoFinale = prezzoBase - (prezzoBase * 20)/100;
+  sconto = 20;
 } else if(eta > 65) {
-  prezzoFinale = prezzoBase - (prezzoBase * 40)/100;
-} else {
-  prezzoFinale = prezzoBase;
+  sconto = 40;
 }
 
+
+/* Calcolo del prezzo finale */
+const prezzoFinale = prezzoBase - (prezzoBase * sconto) / 100;
 
 /* 
   Mandare il prezzoFinale in console (Output)
 */
 console.log(
 `
-Calcolo del prezzo biglietto:
-${chilometri} km, ${eta} anni => Prezzo corretto: € ${prezzoFinale}
 
 `
 );
