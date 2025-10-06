@@ -49,7 +49,7 @@ if(eta < 18) {
 
 
 /* Calcolo del prezzo finale */
-const prezzoFinale = prezzoBase - (prezzoBase * sconto) / 100;
+const prezzoFinale = Number((prezzoBase - (prezzoBase * sconto) / 100).toFixed(2));
 
 /* 
   Mandare il prezzoFinale in console (Output)
@@ -62,15 +62,12 @@ console.log(
   Distanza: ${chilometri} km
   Età: ${eta} anni
 
----------------------------------------
+----------------------------------------
 
   Prezzo base:          €${prezzoBase.toFixed(2)}
   Sconto applicato:     ${sconto}%
-  
----------------------------------------
 
-  PREZZO FINALE:        €${prezzoFinale.toFixed(2)}
-
-*****************************************
+----------------------------------------
 `
 );
+console.log('  PREZZO FINALE :       €', prezzoFinale);
