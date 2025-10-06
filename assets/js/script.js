@@ -69,6 +69,6 @@ Sconto applicato:     ${sconto}%
 
 PREZZO FINALE:        €${prezzoFinale.toFixed(2)}
 
-******************************************
+*****************************************
 `
 );
