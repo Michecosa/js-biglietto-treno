@@ -43,18 +43,25 @@ Verifica se l'età del passeggero rientra in una certa fascia per applicare even
   Se si, applicare il relativo sconto al prezzoBase per ottenere il prezzoFinale
   Altrimenti, il prezzoFinale corrisponde al prezzoBase (18 <= eta <= 65)
 */
+
+let prezzoFinale;
+
 if(eta < 18) {
-  const prezzoFinale = prezzoBase - (prezzoBase * 20)/100;
-  console.log("Il prezzo finale per il pischello è di €",prezzoFinale);
+  prezzoFinale = prezzoBase - (prezzoBase * 20)/100;
 } else if(eta > 65) {
-  const prezzoFinale = prezzoBase - (prezzoBase * 40)/100;
-  console.log("Il prezzo finale per il maestro Hoogway è di €",prezzoFinale);
+  prezzoFinale = prezzoBase - (prezzoBase * 40)/100;
 } else {
-  const prezzoFinale = prezzoBase;
-  console.log("Spiace, ricontattaci tra ", 66-eta, " anni per il prossimo sconto");
+  prezzoFinale = prezzoBase;
 }
 
 
 /* 
   Mandare il prezzoFinale in console (Output)
 */
+console.log(
+`
+Calcolo del prezzo biglietto:
+${chilometri} km, ${eta} anni => Prezzo corretto: € ${prezzoFinale}
+
+`
+);
