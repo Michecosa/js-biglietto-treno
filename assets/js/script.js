@@ -57,5 +57,18 @@ const prezzoFinale = prezzoBase - (prezzoBase * sconto) / 100;
 console.log(
 `
 
+********* Calcolo del biglietto *********
+
+Distanza: ${chilometri} km
+Età: ${eta} anni
+
+---------------------------------------
+Prezzo base:          €${prezzoBase.toFixed(2)}
+Sconto applicato:     ${sconto}%
+---------------------------------------
+
+PREZZO FINALE:        €${prezzoFinale.toFixed(2)}
+
+******************************************
 `
 );
