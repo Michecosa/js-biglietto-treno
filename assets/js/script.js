@@ -59,15 +59,17 @@ console.log(
 
 ********* Calcolo del biglietto *********
 
-Distanza: ${chilometri} km
-Età: ${eta} anni
+  Distanza: ${chilometri} km
+  Età: ${eta} anni
 
 ---------------------------------------
-Prezzo base:          €${prezzoBase.toFixed(2)}
-Sconto applicato:     ${sconto}%
+
+  Prezzo base:          €${prezzoBase.toFixed(2)}
+  Sconto applicato:     ${sconto}%
+  
 ---------------------------------------
 
-PREZZO FINALE:        €${prezzoFinale.toFixed(2)}
+  PREZZO FINALE:        €${prezzoFinale.toFixed(2)}
 
 *****************************************
 `
