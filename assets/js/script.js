@@ -28,8 +28,11 @@ const eta = Number(prompt("Quanti anni hai?"));
 
 
 /* 
-  Calcola il prezzoBase (prezzo senza sconto) 
+  Calcola il prezzoBase (prezzo senza sconto)
+  Nota: il prezzo del biglietto è definito in base ai km (0.21 € al km) 
 */
+const prezzoBase = chilometri * 0.21;
+console.log("Il prezzo base è di €",prezzoBase.toFixed(2));
 
 
 /* 
