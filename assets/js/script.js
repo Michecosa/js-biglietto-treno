@@ -23,6 +23,8 @@
 /* 
   Inizializza variabili (chilometri, eta) con i valori passati dall'utente tramite prompt()
 */
+const chilometri = Number(prompt("Quanti chilometri devi percorrere?"));
+const eta = Number(prompt("Quanti anni hai?"));
 
 
 /* 
