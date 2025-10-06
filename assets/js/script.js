@@ -15,3 +15,31 @@
   - if/ else if/ else
   - toFixed(2)
 */
+
+
+
+
+
+/* 
+  Inizializza variabili (chilometri, eta) con i valori passati dall'utente tramite prompt()
+*/
+
+
+/* 
+  Calcola il prezzoBase (prezzo senza sconto) 
+*/
+
+
+/* 
+Verifica se l'età del passeggero rientra in una certa fascia per applicare eventuali sconti:
+  - minorenne (<18): 20%; 
+  - over65 (>65): 40%;
+
+  Se si, applicare il relativo sconto al prezzoBase per ottenere il prezzoFinale
+  Altrimenti, il prezzoFinale corrisponde al prezzoBase (18 <= eta <= 65)
+*/
+
+
+/* 
+  Mandare il prezzoFinale in console (Output)
+*/
