@@ -2,8 +2,8 @@
 
 Esercizio JavaScript – **Calcolo del prezzo del biglietto del treno** in base ai chilometri e all’età del passeggero.
 
-🌐 [Check it out!](https://michecosa.github.io/js-biglietto-treno/)
-Ricorda di aprire in console per vedere l'output!
+🌐 [Check it out!](https://michecosa.github.io/js-biglietto-treno/) 
+<br>Ricorda di aprire in console per vedere l'output!
 <br>
 
 
