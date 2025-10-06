@@ -49,7 +49,7 @@ if(eta < 18) {
 
 
 /* Calcolo del prezzo finale */
-const prezzoFinale = Number((prezzoBase - (prezzoBase * sconto) / 100).toFixed(2));
+const prezzoFinale = (prezzoBase - (prezzoBase * sconto) / 100).toFixed(2);
 
 /* 
   Mandare il prezzoFinale in console (Output)
