@@ -4,8 +4,9 @@ Esercizio JavaScript – **Calcolo del prezzo del biglietto del treno** in base 
 
 🌐 [Check it out!](https://michecosa.github.io/js-biglietto-treno/) 
 <br>Ricorda di aprire in console per vedere l'output!
+<br>Nota: se non vedi il messaggio di prompt appena avviata la pagina, ricaricala (F5 o la rotella in alto)
 <br>
-
+<br>
 
 ## 🧩 Traccia
 
